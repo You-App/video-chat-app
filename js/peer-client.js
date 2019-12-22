@@ -203,15 +203,6 @@ peerapp = (function() {
             options['audio'] = true;
             options['video'] = false;
         }
-
-        // Get audio/video stream
-        navigator.getUserMedia(options, function(stream) {
-            // Set your video displays
-            window.localStream = stream;
-            myapp.setMyVideo(window.localStream)
-            if(callback)
-                callback();
-        });
     }
 
     function makeCall(callerID, isVideoCall) {
