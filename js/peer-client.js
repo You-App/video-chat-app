@@ -211,9 +211,6 @@ peerapp = (function() {
             myapp.setMyVideo(window.localStream)
             if(callback)
                 callback();
-        }, function(err) {
-            console.log("The following error occurred: " + err.name);
-            alert('Unable to call ' + err.name)
         });
     }
 
